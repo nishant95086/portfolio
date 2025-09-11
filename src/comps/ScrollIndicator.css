@@ -1,0 +1,55 @@
+/* Smooth inner wheel animation */
+@keyframes scrollWheel {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(16px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-scroll-wheel {
+  animation: scrollWheel 2s infinite ease-in-out;
+}
+
+/* Arrow styling */
+.arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #ff3333;
+  border-right: 2px solid #ff3333;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+
+/* Glowing illusion animation */
+@keyframes glow {
+  0%, 100% {
+    border-color: #ff3333;
+    opacity: 0.3;
+  }
+  50% {
+    border-color: #ff3333;
+    opacity: 1;
+  }
+}
+
+/* Apply glow animation to each arrow with delays */
+.glow1 {
+  animation: glow 1.5s infinite;
+}
+.glow2 {
+  animation: glow 1.5s infinite;
+  animation-delay: 0.2s;
+}
+.glow3 {
+  animation: glow 1.5s infinite;
+  animation-delay: 0.4s;
+}

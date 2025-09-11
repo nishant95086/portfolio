@@ -1,0 +1,44 @@
+/* MorphingPhotoBox.css */
+
+@keyframes blobMorph {
+  0% {
+    border-radius: 42% 58% 47% 53% / 41% 51% 49% 59%;
+  }
+  25% {
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+  }
+  50% {
+    border-radius: 35% 65% 60% 40% / 60% 30% 70% 40%;
+  }
+  75% {
+    border-radius: 55% 45% 50% 50% / 30% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 42% 58% 47% 53% / 41% 51% 49% 59%;
+  }
+}
+
+@keyframes multicolor-glow {
+  0% {
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+  }
+  25% {
+    box-shadow: 0 0 15px #8a2be2, 0 0 30px #8a2be2;
+  }
+  50% {
+    box-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff;
+  }
+  75% {
+    box-shadow: 0 0 15px #ff1493, 0 0 30px #ff1493;
+  }
+  100% {
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+  }
+}
+
+.morphing-box {
+  animation: blobMorph 8s infinite ease-in-out, multicolor-glow 4s infinite ease-in-out;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
