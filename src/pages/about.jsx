@@ -94,7 +94,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mt-20 mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold font-mono bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative">
+          <h1 className="text-4xl p-2 md:text-5xl font-bold font-mono bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative">
             ABOUT ME
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse"></div>
           </h1>
@@ -132,7 +132,7 @@ export default function About() {
                   <motion.p
                     key={i}
                     variants={fadeUp}
-                    className="text-gray-300 text-lg leading-relaxed hover:text-white transition-colors duration-300"
+                    className="text-gray-300 text-md lg:text-lg leading-relaxed hover:text-white transition-colors duration-300"
                   >
                     {text}
                   </motion.p>
@@ -216,7 +216,7 @@ export default function About() {
                           </span>
                           <div className="flex-1">
                             <h3
-                              className={`font-bold text-lg px-2 bg-gradient-to-r ${item.color} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}
+                              className={`font-bold text-md lg:text-lg px-2 bg-gradient-to-r ${item.color} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}
                             >
                               {item.title}
                             </h3>

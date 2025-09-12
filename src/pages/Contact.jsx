@@ -153,7 +153,7 @@ const Contact = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center pt-20 mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold font-mono bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative">
+          <h1 className="text-4xl p-2 md:text-5xl font-bold font-mono bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative">
             Get in Touch
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse"></div>
           </h1>
@@ -323,7 +323,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-white mb-1">
                         {info.title}
                       </h3>
-                      <p className="text-gray-300">{info.value}</p>
+                      <p className="text-gray-300 px-2">{info.value}</p>
                     </div>
                   </motion.div>
                 ))}

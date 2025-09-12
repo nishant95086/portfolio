@@ -110,7 +110,7 @@ export default function Projects() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative mb-6">
+          <h1 className="text-5xl p-2 md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent relative mb-6">
             My Projects
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full animate-pulse"></div>
           </h1>
@@ -146,7 +146,7 @@ export default function Projects() {
                 {project.featured && (
                   <div className="absolute top-6 right-6 z-20">
                     <div
-                      className={`bg-gradient-to-r ${project.gradient} px-4 py-2 rounded-full text-white text-sm font-semibold flex items-center gap-2 animate-pulse`}
+                      className={`bg-gradient-to-r ${project.gradient} px-4 py-2 rounded-full text-white text-[10px] lg:text-sm font-semibold flex items-center gap-2 animate-pulse`}
                     >
                       <Star className="w-4 h-4" />
                       Featured
@@ -156,7 +156,7 @@ export default function Projects() {
 
                 {/* Category Badge */}
                 <div className="absolute top-6 left-6 z-20">
-                  <div className="bg-slate-900/80 backdrop-blur-sm px-4 py-2 rounded-full text-cyan-300 text-sm font-medium border border-cyan-500/30">
+                  <div className="bg-slate-900/80 backdrop-blur-sm px-4 py-2 rounded-full text-cyan-300 text-[10px] lg:text-sm font-medium border border-cyan-500/30">
                     {project.category}
                   </div>
                 </div>
@@ -263,9 +263,9 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`flex items-center gap-3 bg-gradient-to-r ${project.gradient} text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 group/btn`}
+                          className={`flex items-center gap-3 text-[10px] bg-gradient-to-r ${project.gradient} text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 group/btn`}
                         >
-                          <Github className="w-5 h-5 transition-transform group-hover/btn:rotate-12" />
+                          <Github className="w-5 h-5  transition-transform group-hover/btn:rotate-12" />
                           View Code
                         </motion.a>
 
@@ -280,11 +280,11 @@ export default function Projects() {
                             .replace(
                               "to-",
                               "border-"
-                            )} text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 hover:bg-gradient-to-r ${
+                            )} text-white px-6 py-3 rounded-2xl text-[10px] font-semibold transition-all duration-300 hover:bg-gradient-to-r ${
                             project.gradient
                           } group/btn border-purple-400 hover:border-transparent`}
                         >
-                          <ExternalLink className="w-5 h-5 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+                          <ExternalLink className="w-5 h-5  transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                           Live Demo
                         </motion.a>
                       </div>
