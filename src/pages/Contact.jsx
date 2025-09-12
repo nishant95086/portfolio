@@ -293,7 +293,7 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-slate-800/50 to-blue-900/30 backdrop-blur-sm rounded-3xl p-8 border border-blue-500/20 shadow-2xl hover:shadow-blue-500/20 transition-all duration-500">
               <motion.div variants={fadeUp} className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-2xl animate-pulse">
+                  <div className="w-12 h-12 p-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-2xl animate-pulse">
                     📞
                   </div>
                   <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
@@ -320,10 +320,10 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-white mb-1">
+                      <h3 className="font-semibold text-white">
                         {info.title}
                       </h3>
-                      <p className="text-gray-300 px-2">{info.value}</p>
+                      <p className="text-gray-300 pr-2">{info.value}</p>
                     </div>
                   </motion.div>
                 ))}

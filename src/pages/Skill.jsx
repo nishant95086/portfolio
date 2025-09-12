@@ -201,7 +201,7 @@ export default function Skills() {
                 <div className="text-center mb-8">
                   <div className="flex items-center justify-center gap-4 mb-4">
                     <div
-                      className={`w-16 h-16 bg-gradient-to-r ${category.gradient} rounded-2xl flex items-center justify-center text-3xl shadow-lg animate-bounce-slow`}
+                      className={`w-16 h-16 p-3 bg-gradient-to-r ${category.gradient} rounded-2xl flex items-center justify-center text-3xl shadow-lg animate-bounce-slow`}
                     >
                       {category.emoji}
                     </div>
