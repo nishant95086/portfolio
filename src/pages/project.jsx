@@ -29,6 +29,25 @@ export default function Projects() {
       bgGradient: "from-purple-500/10 to-pink-600/10",
       featured: true,
     },
+    {
+      title: "PiggyPal - Personal Finance Dashboard",
+      description:
+        "PiggyPal is a modern personal finance management web app I built to help users track incomes, savings, expenses, wishes, loans (Udhar), and tasks (ToDos). It features authentication (signup, login, password change), CRUD operations for financial records, and a clean responsive UI. Built with the MERN stack, Tailwind CSS, and Framer Motion, PiggyPal provides an intuitive and interactive way to manage money effectively.",
+      image: "https://i.ibb.co/7tpXwXCC/Screenshot-2025-09-26-112136.png",
+      github: "https://github.com/nishant95086/piggypal",
+      demo: "https://piggypal-theta.vercel.app/",
+      category: "Full-Stack Web App",
+      technologies: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Tailwind",
+        "Framer Motion",
+      ],
+      gradient: "from-blue-500 to-purple-600",
+      bgGradient: "from-blue-500/10 to-purple-600/10",
+      featured: true,
+    },
   ];
 
   // Enhanced animation variants
@@ -253,8 +272,6 @@ export default function Projects() {
                         </div>
                       </div>
 
-                     
-
                       {/* Enhanced Action Buttons */}
                       <div className="flex gap-4">
                         <motion.a
@@ -303,8 +320,6 @@ export default function Projects() {
             </motion.div>
           ))}
         </motion.div>
-
-
       </div>
 
       {/* Enhanced CSS Animations */}
