@@ -174,7 +174,7 @@ export default function Projects() {
                 )}
 
                 {/* Category Badge */}
-                <div className="absolute top-6 left-6 z-20">
+                <div className="absolute top-4 left-6 z-20">
                   <div className="bg-slate-900/80 backdrop-blur-sm px-4 py-2 rounded-full text-cyan-300 text-[10px] lg:text-sm font-medium border border-cyan-500/30">
                     {project.category}
                   </div>

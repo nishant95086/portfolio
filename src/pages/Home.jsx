@@ -139,7 +139,7 @@ export default function Home() {
           <div className="mt-5 flex justify-center lg:justify-start gap-4 animate-fade-in-up animation-delay-2500">
             {/* Enhanced Resume Button */}
             <a
-              href="#"
+              href="/Nishant_C.V.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative px-8 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] overflow-hidden"
