@@ -4,21 +4,39 @@ import { ExternalLink, Github, Star, Zap, Shield } from "lucide-react";
 
 const projects = [
   {
-    title: "PiggyPal",
-    subtitle: "Personal Finance Dashboard",
+    title: "Aarsh Wedding Studio",
+    subtitle: "Full-Stack Photography Portfolio",
     description:
-      "A modern personal finance management app that helps users track incomes, savings, expenses, wishes, loans, and tasks — all in one elegant dashboard.",
-    github: "https://github.com/nishantkumar35/piggypal",
-    demo: "https://piggypal-theta.vercel.app/",
-    image: "https://i.ibb.co/hRrtrv3S/Screenshot-2026-03-15-222427.png",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Framer Motion", "JWT"],
-    color: "#2563EB",
-    accent: "rgba(37,99,235,0.08)",
-    accentBorder: "rgba(37,99,235,0.18)",
+      "A premium, full-stack wedding photography and videography portfolio website. Features a 3D WebGL circular image carousel, interactive Instagram-style stories, a secure folder-based media uploader, and dual-channel booking notifications.",
+    github: "https://github.com/nishantkumar35/wedding-portfolio",
+    demo: "https://www.aarshwadding.studio",
+    image: "https://www.aarshwadding.studio/assets/hero.jpeg",
+    technologies: ["Next.js", "MongoDB", "Redis", "Cloudinary", "Shadcn UI", "NextAuth", "Tailwind", "Zod"],
+    color: "#2D3539",
+    accent: "rgba(45,53,57,0.08)",
+    accentBorder: "rgba(45,53,57,0.18)",
     metrics: [
-      { icon: <Star size={13} />, text: "Full CRUD Finance Tracker" },
-      { icon: <Zap size={13} />,  text: "Real-time Dashboard" },
-      { icon: <Shield size={13} />,text: "JWT Auth" },
+      { icon: <Star size={13} />, text: "Image Management System" },
+      { icon: <Zap size={13} />,  text: "Instagram Stories Engine" },
+      { icon: <Shield size={13} />,text: "NextAuth + Redis Security" },
+    ],
+  },
+  {
+    title: "Social Microservices Hub",
+    subtitle: "Scalable Social Media Platform",
+    description:
+      "A production-ready social media platform built with a distributed microservices architecture — secure auth, post management, real-time search, API Gateway, and RabbitMQ messaging.",
+    github: "https://github.com/nishantkumar35/micro-service-social-media",
+    demo: "#",
+    image: "https://i.ibb.co/DPMLwvhs/Screenshot-2026-03-24-205138.png",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Redis", "RabbitMQ", "Tailwind", "JWT", "Argon2", "Winston", "Helmet"],
+    color: "#0EA5E9",
+    accent: "rgba(14,165,233,0.08)",
+    accentBorder: "rgba(14,165,233,0.18)",
+    metrics: [
+      { icon: <Star size={13} />,   text: "Microservices Architecture" },
+      { icon: <Zap size={13} />,    text: "RabbitMQ Messaging" },
+      { icon: <Shield size={13} />, text: "Rate Limiting + Helmet" },
     ],
   },
   {
@@ -40,24 +58,26 @@ const projects = [
     ],
   },
   {
-    title: "Social Microservices Hub",
-    subtitle: "Scalable Social Media Platform",
+    title: "PiggyPal",
+    subtitle: "Personal Finance Dashboard",
     description:
-      "A production-ready social media platform built with a distributed microservices architecture — secure auth, post management, real-time search, API Gateway, and RabbitMQ messaging.",
-    github: "https://github.com/nishantkumar35/micro-service-social-media",
-    demo: "#",
-    image: "https://i.ibb.co/DPMLwvhs/Screenshot-2026-03-24-205138.png",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redis", "RabbitMQ", "Tailwind", "JWT", "Argon2", "Winston", "Helmet"],
-    color: "#0EA5E9",
-    accent: "rgba(14,165,233,0.08)",
-    accentBorder: "rgba(14,165,233,0.18)",
+      "A modern personal finance management app that helps users track incomes, savings, expenses, wishes, loans, and tasks — all in one elegant dashboard.",
+    github: "https://github.com/nishantkumar35/piggypal",
+    demo: "https://piggypal-theta.vercel.app/",
+    image: "https://i.ibb.co/hRrtrv3S/Screenshot-2026-03-15-222427.png",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind", "Framer Motion", "JWT"],
+    color: "#2563EB",
+    accent: "rgba(37,99,235,0.08)",
+    accentBorder: "rgba(37,99,235,0.18)",
     metrics: [
-      { icon: <Star size={13} />,   text: "Microservices Architecture" },
-      { icon: <Zap size={13} />,    text: "RabbitMQ Messaging" },
-      { icon: <Shield size={13} />, text: "Rate Limiting + Helmet" },
+      { icon: <Star size={13} />, text: "Full CRUD Finance Tracker" },
+      { icon: <Zap size={13} />,  text: "Real-time Dashboard" },
+      { icon: <Shield size={13} />,text: "JWT Auth" },
     ],
   },
 ];
+
+
 
 const stagger = {
   hidden: {},
